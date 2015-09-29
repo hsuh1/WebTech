@@ -1,0 +1,63 @@
+<html>
+<style type="text/css">
+		h1 {color: navy; text-align: center}
+		p {margin:20px}
+		form {background-color: silver; 
+		color: navy; 
+		font-weight: bold; 
+		margin-top:50px;
+		margin-bottom:50px;
+		margin-left:100px;
+		margin-right:100px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 50px;
+		padding-left: 100px
+		}
+</style>
+<head>
+	<title>Web Forms - CS08-InClass</title>
+</head>
+<body>
+	<h1> Web Forms - CS08-InClass</h1>
+	<form method="post" action="mailer.php">
+	<p> Last Name:
+		<input type="text" name="lName" maxlength="100" size="20" value="Last Name"/>
+		<input type="text" name="fName" maxlength="100" size="20" value="First Name">
+	</p>
+	<p>Gender: 
+		Male <input type="radio" name="gender" value="male"> 
+		Female <input type="radio" name="gender" value="female">
+	</p>
+	<p> My favorite Web Tech topics are:
+		<br/>
+		<input type="checkbox" name="Q1" value="Basic HTML">Basic HTML <br/>
+		<input type="checkbox" name="Q1" value="CSS">CSS <br/>
+		<input type="checkbox" name="Q1" value="Tables">Tables <br/>
+		<input type="checkbox" name="Q1" value="Forms">Forms
+	</p>
+	<p> What grade do you expect to receive?
+		<select name="grade">
+			<option value="A">A</option>
+			<option value="A-">A-</option>
+			<option value="B+">B+</option>
+			<option value="B">B</option>
+			<option value="B-">B-</option>
+			<option value="B-">C+</option>
+		</select>
+	</p>
+	<p>
+	Please add any comments you have.
+	</br>
+	<textarea name="comments" rows="5" cols="29">Any further comments</textarea>	
+		
+	</p>
+	<p>
+	<button type="Submit" value="Submit" name="submit"> Submit <img src="Images/mailbox.png" height="30"/></button>
+	<button type="Reset" value="Reset" name="Reest"> Submit <img src="Images/reset.png" height="30"/></button>
+	</p>
+	</form>
+	
+	<a href="low.htm">My Work in WebTech</a>
+</body>
+</html>
