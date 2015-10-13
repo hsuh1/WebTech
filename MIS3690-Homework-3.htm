@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>MIS3690-HomeWork-3</title>
+        <link rel="stylesheet" type="text/css" href="MIS3690-HomeWork-3.css"/>
+        <style type="text/css">
+        body {background-color:black}
+        div#beaver {background-repeat: repeat;
+                    background-image: url("images/beaver.jpg")}
+        </style>
+    </head>
+    <body>
+        <table>
+        <caption> Soap Survey </caption>
+        <tr class=center>
+            <td>Soap Image</td><td>Soap Color</br>Preference</td><td>Soap Purchase</br>Intent</td><td>Soap Features Liked</td>
+        </tr>
+        <tr>
+            <td class=img><img src="Images/pearssoap.jpg" width="50%"></td> 
+            <td><input type="radio" name="Soap Color" value="Green">Green
+                </br><input type="radio" name="Soap Color" value="Gold">Gold (shown)
+                </br><input type="radio" name="Soap Color" value="Red">Red</td>
+            <td class=center>At $5.00/unit</br>
+                <select name="Intent">
+                <option value="5">Definitely Buy</option>
+                <option value="4">Likely Buy</option>
+                <option value="3">Undecided</option>
+                <option value="2">Unlikely Buy</option>
+                <option value="1">Not Buy</option>
+                </select></td>
+            <td><input type="checkbox" name="Feature" value="Shape">Shape<br/>
+                <input type="checkbox" name="Feature" value="Size">Size<br/>
+                <input type="checkbox" name="Feature" value="Smell">Smell<br/>
+                <input type="checkbox" name="Feature" value="Texture">Texture
+            </td>
+        </tr>
+        <tr>
+            <td class=img><img src="Images/mysoresandalsoap.jpg" width="50%"></td>
+            <td><input type="radio" name="Soap Color" value="Ivory">Ivory
+                </br><input type="radio" name="Soap Color" value="Sandal Wood">Sandal Wood (shown)
+                </br><input type="radio" name="Soap Color" value="Pink">Pink</td>
+            <td class=center>At $5.00/unit</br>
+                <select name="Intent">
+                <option value="5">Definitely Buy</option>
+                <option value="4">Likely Buy</option>
+                <option value="3">Undecided</option>
+                <option value="2">Unlikely Buy</option>
+                <option value="1">Not Buy</option>
+                </select></td>
+            <td><input type="checkbox" name="Feature" value="Shape">Shape<br/>
+                <input type="checkbox" name="Feature" value="Size">Size<br/>
+                <input type="checkbox" name="Feature" value="Smell">Smell<br/>
+                <input type="checkbox" name="Feature" value="Texture">Texture
+            </td>
+        </tr>
+        <tr id=white>
+            <td colspan=4> Tell us about yourself...</td></tr>
+        </tr>
+        <tr>
+            <td> Gender: <select name="gender"><option value="1">Male</option><option value="0">Female</option></td>
+            <td colspan=3>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input class="yellow" type="text" name="age" maxlength="3" size="5"></td>
+        </tr>
+        <tr>
+            <td colspan=2>Your comments are welcome:</br><textarea id="textarea" class="yellow" name="comments"></textarea></td>
+            <td class=center colspan=2><button type="Done" value="Done" name="Done">Done</button>
+                                        <button type="Oops" value="Oops" name="Oops">Oops</button>
+        </tr>
+        </table>
+        <div id="beaver">
+            <img src="images/beaver.jpg">
+        </div>   
+    </body>
