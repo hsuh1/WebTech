@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Array Demo</title>
+		<script>
+			function selectChoice(){
+				var myForm = document.getElementById("form1");
+				var userChoice;
+				var i;
+				
+				for(i=0; i < myForm.color.length; i++){
+					if (myForm.color[i].checked){
+						alert();
+						userChoice=myForm.color[i].value;
+					}
+				}
+				document.getElementById("choice").innerHTML=userChoice;
+				
+				var x;
+				var sum=0;
+				for (x=1; x<101; x++){
+					//alert("Currnet sum: " + sum + ". Current x: " +x);
+					sum = sum + x;
+					//alert("after adding x, now sum is "+ sum);
+				}
+				document.getElementByID("sum").innerHTML=sum;
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+		<form id="form1" action="" method="post">
+			Red: <input type="radio" name="color" value="red"/>
+			Blue: <input type="radio" name="color" value="blue"/>
+			Yellow: <input type="radio" name="color" value="yellow"/>
+			Green: <input type="radio" name="color" value="green"/>
+			<button onclick="return selectChoice()">Click ME!</button>
+		</form>
+		<p>You have chosen <span id="choice"> </span></p>
+		<p>The final result is <span id="sum"> </span></p>
+	</body>
+</html>
+		

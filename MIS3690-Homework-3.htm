@@ -5,12 +5,15 @@
 	    <title>MIS3690-HomeWork-3</title>
         <link rel="stylesheet" type="text/css" href="MIS3690-HomeWork-3.css"/>
         <style type="text/css">
-        body {background-color:black}
-        div#beaver {background-repeat: repeat;
-                    background-image: url("images/beaver.jpg")}
+        body {background-color:black;
+        background-image: url(images/beaver.jpg);
+        background-repeat: repeat-x;
+        background-position: bottom;
+        background-attachment: fixed;}
         </style>
     </head>
     <body>
+        <form method="post" action="">
         <table>
         <caption> Soap Survey </caption>
         <tr class=center>
@@ -55,19 +58,18 @@
             </td>
         </tr>
         <tr id=white>
-            <td colspan=4> Tell us about yourself...</td></tr>
+            <td colspan=4> Tell us about yourself...</td>
         </tr>
         <tr>
-            <td> Gender: <select name="gender"><option value="1">Male</option><option value="0">Female</option></td>
+            <td> Gender: <select name="gender"><option value="1">Male</option><option value="0">Female</option></select></td>
             <td colspan=3>Age: (under 25 enter 1, 25-40 enter 2, else enter 3)<input class="yellow" type="text" name="age" maxlength="3" size="5"></td>
         </tr>
         <tr>
             <td colspan=2>Your comments are welcome:</br><textarea id="textarea" class="yellow" name="comments"></textarea></td>
             <td class=center colspan=2><button type="Done" value="Done" name="Done">Done</button>
-                                        <button type="Oops" value="Oops" name="Oops">Oops</button>
+                                        <button type="Oops" value="Oops" name="Oops">Oops</button></td>
         </tr>
         </table>
-        <div id="beaver">
-            <img src="images/beaver.jpg">
-        </div>   
+     </form>
     </body>
+    </html>

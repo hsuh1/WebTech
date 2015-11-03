@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>Grade Homework #4</title>
+        <style type="text/css">
+        h1 {text-align:center; font-family:Arial; color:Navy;}
+        img {border:6px solid navy; margin-bottom:100px;}
+        p.cent{text-align:center;}
+        ul, p#inst{margin-right:200px; margin-left:200px; font-family:Cursive;font-size:1em;}
+        li {margin-top:10px; margin-bottom:10px;}
+        button{margin-right:20px;background-color:White; height:50px;width:140px}
+        
+        
+        
+        </style>
+        <script type="text/javascript">
+            function change(id) {
+                var gs = document.getElementById("shepherd");
+                var pen = document.getElementById("penguin");
+                var sl = document.getElementById("leopard");
+                var last = document.getElementById("lynx");
+                var h = document.getElementById("name");
+                if (id == "shepherd") {
+                    var img = document.getElementById("animal");
+                    img.src = "images/shepherd.jpg";
+                    img.title = "Shepherd";
+                    img.style.borderColor = "brown";
+                    gs.style.backgroundColor = "silver";
+                    pen.style.backgroundColor = "white";
+                    sl.style.backgroundColor = "white";
+                    last.style.backgroundColor = "white";
+                    h.innerHTML = "Shepherd";
+                }
+                else if (id == "penguin") {
+                    var img = document.getElementById("animal");
+                    img.src = "images/penguin.jpg";
+                    img.title = "Penguin";
+                    img.style.borderColor = "skyblue";
+                    pen.style.backgroundColor = "silver";
+                    gs.style.backgroundColor = "white";
+                    sl.style.backgroundColor = "white";
+                    last.style.backgroundColor = "white";
+                    h.innerHTML = "Penguin";
+                }
+                else if (id == "leopard") {
+                    var img = document.getElementById("animal");
+                    img.src = "images/snowleopard.jpg";
+                    img.title = "Snow Leopard";
+                    img.style.borderColor = "lime";
+                    sl.style.backgroundColor = "silver";
+                    gs.style.backgroundColor = "white";
+                    pen.style.backgroundColor = "white";
+                    last.style.backgroundColor = "white";
+                    h.innerHTML = "Snow Leopard";
+                }
+                else {
+                    var img = document.getElementById("animal");
+                    img.src = "images/lynx.jpg";
+                    img.title = "Lynx";
+                    img.style.borderColor = "orange";
+                    last.style.backgroundColor = "silver";
+                    gs.style.backgroundColor = "white";
+                    pen.style.backgroundColor = "white";
+                    sl.style.backgroundColor = "white";
+                    h.innerHTML = "Lynx";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+	    <h1 id="name"> The Animal Name Goes Here</h1>
+        <p class="cent">
+        <img id="animal" onclick="change()" src="" alt="Image Goes Here" title="Animal Name" />
+        </p>
+        <p class="cent">
+        <button onclick="change(this.id)" id="shepherd">German Shepherd</button> 
+        <button onclick="change(this.id)" id="penguin">Penguin</button>
+        <button onclick="change(this.id)" id="leopard">Snow Leopard</button> 
+        <button onclick="change(this.id)" id="lynx">Lynx</button>
+       </p>
+       </body>
+</html>
